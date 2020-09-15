@@ -20,7 +20,7 @@ max_epochs = 10000
 LEARNING_RATE = 1e-4
 n_batches = 10
 
-data = pd.read_csv('C:\\Users\\Home\\Documents\\MachineLearning\\Projects\\data_for_classification.csv')
+data = pd.read_csv('')
 y_values = data['y']
 x_values = data.drop(['y'], axis=1)
 
