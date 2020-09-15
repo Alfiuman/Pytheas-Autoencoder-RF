@@ -163,10 +163,10 @@ y_train.reset_index(drop=True, inplace=True)
 y_test.reset_index(drop=True, inplace=True)
 
 random_forest = RandomForestClassifier(n_estimators=n_estimators,
-                                     bootstrap=bootstrap,
-                                     n_jobs=2,
-                                     random_state=rand,
-                                     verbose=0)
+                                       bootstrap=bootstrap,
+                                       n_jobs=2,
+                                       random_state=rand,
+                                       verbose=0)
 random_forest.fit(x_train, y_train)
 y_pred_from_train = random_forest.predict(x_train)
 y_pred = random_forest.predict(x_test)
